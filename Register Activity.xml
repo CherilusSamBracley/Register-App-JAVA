@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".RegisterActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="REGISTER"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:gravity="center_horizontal" />
+
+
+
+    <EditText
+        android:id="@+id/passwordEt"
+        android:hint="Password"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <EditText
+        android:id="@+id/emailEtt"
+        android:hint="Email"
+        android:layout_above="@id/passwordEt"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/go_to_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have account login ?"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Register_Btn"
+        android:layout_marginTop="40dp"
+
+        />
+
+
+    <Button
+        android:id="@+id/Register_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:layout_below="@id/passwordEt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        />
+
+</RelativeLayout>
